@@ -1,0 +1,16 @@
+{
+  "name": "02.-basic-utility-part1",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev" : "npx tailwindcss -i ./src/css/main.css -o ./public/css/style.css --watch --minify"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "tailwindcss": "^3.3.3"
+  }
+}
