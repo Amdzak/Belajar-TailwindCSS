@@ -6,8 +6,40 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/style.css">
     <title>Tailwindcss basic utility</title>
+    <!-- dapat tulisa saja code ini di dalam tailwind.config.jd -->
+    <!--   theme: {
+                extend: {
+                    margin: {
+                        '13' : "100px",
+                    }
+                },
+            },-->
+    <style>
+        #a *{
+            border: 1px solid black;
+        }
+    </style>
 </head>
 <body>
-    <h1 class="font-bold">Hello world</h1>
+    <h1>Belajar tailwindcss</h1>
+    <section id="a" class="mb-9">
+        <h2 class="text-cyan-400 text-5xl">Spacing</h2>
+        <!-- memberikan ke4 sisi margin dengan satuan rem -->
+        <div class="m-13 bg-green-500">Margin</div> 
+        <div class="p-8">Padding</div>
+        <div class="w-1/2 h-32">kotak</div> <!-- dia akan lebar etengah dari parent -->
+    </section>
+
+    <section class="font-serif max-w-4xl mx-auto">
+        <h2 class="mb-4 text-5xl">Typografi tailwindcss</h2>
+        <div class="mb-8 text-xl text-gray-500">by <a href="#" class="text-l">ahmad</a> agustus 2023</div>
+        <blockquote class="mb-8 italic font-thin text-2xl">Lorem ipsum dolor sit <a href="#" class="underline font-extrabold">amet</a> consectetur adipisicing elit. Molestiae minus corrupti repellendus, id ducimus labore sed rem est distinctio nesciunt, voluptatem fugiat ullam, ad exercitationem quasi excepturi! Velit, reiciendis nostrum?
+        Fuga a.</blockquote>
+        <p class="mb-8">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Mollitia magnam est fugiat? Illum voluptate eaque iste ut dolor molestias. Quae ipsum dolorem eius ea voluptatem numquam veritatis, est aspernatur inventore!
+        Cupiditate corrupti quas exercitationem debitis amet, nisi mollitia aliquid deleniti cum repellat necessitatibus neque eos molestiae laborum harum. Accusantium fuga unde perspiciatis error laudantium. Consequatur dicta nisi ea asperiores praesentium.
+        Consequatur dignissimos aspernatur dolorem asperiores quis iusto commodi doloremque debitis quos voluptates aliquid sit cum, officiis nesciunt est nulla modi eos accusamus excepturi! Inventore maiores similique dolorem explicabo? Dicta, quos!</p>
+        <p class="mb-4">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eos minima illo quam ducimus totam! Eaque eius totam quae et aliquid nesciunt nostrum tempora dicta ab molestiae iure voluptates, dignissimos minima!
+        At voluptates officia distinctio. Magni perspiciatis ipsa soluta rerum illo consectetur nihil iure, quaerat quisquam, neque deleniti labore perferendis, culpa ut similique quam eaque pariatur natus facilis ducimus veritatis dolorem!</p>
+    </section>
 </body>
 </html>
